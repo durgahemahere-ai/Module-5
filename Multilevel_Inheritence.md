@@ -1,12 +1,12 @@
-# Multilevel Inheritance Example in Python
+# 5d) Multilevel Inheritance Example in Python
 
 This Python project demonstrates the concept of **Multilevel Inheritance** to collect and display the **name**, **age**, and **location** of a person.
 
-## 🎯 Aim
+##  Aim
 
 To write a Python program that uses multilevel inheritance to get and display a person’s name, age, and location.
 
-## 🧠 Algorithm
+##  Algorithm
 
 1. **Parent Class**  
    - `__init__(name)` initializes the `name` attribute.  
@@ -26,7 +26,23 @@ To write a Python program that uses multilevel inheritance to get and display a 
    - Print all details using class methods.
 
 ## Program
-Add code here
+```
+class student:
+    def __init__(self,name,age,location):
+        self.name=name
+        self.age=age
+        self.location=location
+    def display(self):
+        print(self.name,self.age,self.location)
+name=input()
+age=int(input())
+location=input()
+obj=student(name,age,location)
+obj.display()
+```
 
 ## Sample Output
+<img width="810" height="213" alt="image" src="https://github.com/user-attachments/assets/d830fcbd-de85-4d8a-b376-7d7b5f0697ea" />
 
+## Result
+Progrm executed Successfully.
