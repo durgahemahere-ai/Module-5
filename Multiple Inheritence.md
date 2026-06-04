@@ -1,12 +1,12 @@
-# Arithmetic Operations Using Multiple Inheritance in Python
+# 5e) Arithmetic Operations Using Multiple Inheritance in Python
 
 This Python program demonstrates **multiple inheritance** by performing basic arithmetic operations — Addition, Subtraction, and Division — using three classes.
 
-## 🎯 Aim
+##  Aim
 
 To write a Python program to calculate **Add, Sub & Division** using **Multiple Inheritance**.
 
-## 🧠 Algorithm
+##  Algorithm
 
 1. **Define `Calculation1` class**
    - Contains `Summation(a, b)` method to return the sum of two numbers.
@@ -23,7 +23,28 @@ To write a Python program to calculate **Add, Sub & Division** using **Multiple 
 6. **Output**
    - Display the results of the three operations.
 
-## 💻 Program 
-Add code here
+##  Program 
+```
+class addition:
+    def add(self,a,b):
+        return a+b
+class subtraction:
+    def sub(self,a,b):
+        return a-b
+class division:
+    def div(self,a,b):
+        return a/b
+class calculator(addition,subtraction,division):
+    pass
+a=int(input())
+b=int(input())
+calc=calculator()
+print(calc.add(a,b))
+print(calc.sub(a,b))
+print(calc.div(a,b))
+```
 ## Output Example
+<img width="531" height="229" alt="image" src="https://github.com/user-attachments/assets/9904eaf8-c13d-4c74-9e83-1a9b707bf46c" />
 
+# Result
+Program executed Successfully.
